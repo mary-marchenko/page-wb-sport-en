@@ -1,0 +1,268 @@
+.fav-page
+
+  @media screen and (min-width: 1921px)
+    background-size: 100% 1514px
+    background-position: 50% -141px
+
+  @media screen and (max-width: 1266px)
+    .welcome
+      width: 100%
+      &__decor
+        width: 1244px
+
+  @media screen and (max-width: 1225px)
+    .welcome
+      &__decor
+        &-item
+          &.helm
+            left: 100px
+          &.ball
+            right: 130px
+
+
+  @media screen and (max-width: 1050px)
+    gap: 65px
+    .cont
+      width: 695px
+    .bonus
+      &__title
+        top: 255px
+        &.games
+          top: 434px
+    .welcome
+      gap: 7px
+      &__title
+        font-size: 40px
+      &__bonus
+        height: 45px
+        &-left
+          font-size: 32px
+          padding: 0 35px
+          span
+            font-size: 20px
+            letter-spacing: 0.52px
+        &-right
+          margin-left: -30px
+          font-size: 32px
+          padding: 0 35px
+      &__details
+        &-item
+          font-size: 16px
+      &__decor
+        width: 1000px
+        &-item
+          &.ball
+            width: 90px
+            right: 130px
+            top: 50px
+          &.glove
+            width: 90px
+            right: 195px
+            top: -15px
+          &.tennis
+            width: 110px
+            top: -20px
+          &.helm
+            width: 90px
+            left: 130px
+            top: 45px
+    .activate
+      margin-top: -35px
+    .levels
+      padding-left: 0
+      gap: 0
+    .drop, .info
+      width: 704px
+    .drop
+      margin-top: 10px
+
+  @media screen and (max-width: 900px)
+    position: relative
+    .bonusWrapp
+      max-width: 94%
+      overflow-x: scroll
+      overflow-y: visible
+      -webkit-overflow-scrolling: touch
+      overscroll-behavior-x: contain
+      scrollbar-width: none
+      -ms-overflow-style: none
+      padding-bottom: 0
+      border-radius: 3px
+      &::-webkit-scrollbar
+        display: none
+        height: 0
+    .bonusWrapp.ios-scrollbar-outer
+      padding-bottom: 0
+    .bonusWrapp .ios-scrollbar-track-h
+      margin-top: -12px
+      flex-shrink: 0
+      position: sticky
+      left: 0
+      height: 8px
+      width: 100%
+      background: $blue-number
+      z-index: 10
+      pointer-events: none
+      border-radius: 4px
+    .bonusWrapp .ios-scrollbar-thumb-h
+      height: 8px
+      background: $magenta
+      border-radius: 4px
+      position: absolute
+      bottom: 0
+      left: 0
+    .activate
+      &.cont
+        width: 100%
+
+
+  @media screen and (max-width: 755px)
+    .welcome
+      &__decor-item
+        &.ball
+          top: 70px
+          width: 80px
+          right: 160px
+        &.helm
+          left: 155px
+    .fiq.cont
+      width: 100%
+    .drop, .info
+      width: 90%
+
+  @media screen and (max-width: 680px)
+    .welcome
+      &__decor-item
+        &.glove
+          display: none
+        &.ball
+          top: 40px
+          right: 200px
+        &.tennis
+          left: 210px
+          top: -23px
+        &.helm
+          left: 180px
+      &__details
+        &-item
+          font-size: 14px
+
+  @media screen and (max-width: 600px)
+    gap: 36px
+    .bonusWrapp
+      gap: 10px
+    .welcome
+      gap: 10px
+      &__title
+        font-size: 30px
+        gap: 5px
+        margin-left: 0
+        span
+          font-size: 14px
+          line-height: 25px
+      &__bonus
+        z-index: 2
+        height: fit-content
+        flex-direction: column
+        &-left
+          height: 45px
+          align-self: flex-start
+          font-size: 30px
+          letter-spacing: 0.6px
+          padding: 0 30px
+          span
+            font-size: 20px
+            letter-spacing: 0.4px
+      &__details
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 330px
+        gap: 13px
+        position: relative
+        &-item
+          font-size: 14px
+          &:nth-child(1)
+            align-self: flex-start
+          &:nth-child(3)
+            align-self: center
+          &:nth-child(5)
+            align-self: flex-end
+        &-arrow
+          img
+            height: 10px
+        &-arrowBox
+          position: absolute
+          transform: rotate(90deg)
+          &:nth-child(2)
+            left: 52%
+            top: 3px
+          &:nth-child(4)
+            right: 18%
+            top: 47%
+      &__decor
+        width: 600px
+        &-item
+          &.ball
+            top: 50px
+            right: 100px
+            width: 70px
+          &.tennis
+            display: none
+          &.helm
+            top: 38px
+            width: 70px
+            left: 120px
+    .levels
+      padding-left: 9px
+      width: 685px
+    .bonusWrapp
+      .ios-scrollbar-track-h
+        margin-top: 8px
+    .activate
+      margin-top: 0
+    .bonus
+      margin-top: 0
+      &__row
+        padding-top: 0
+        width: 99%
+      &__title
+        top: 270px
+        margin: 0 0 0 20px
+        letter-spacing: 0.32px
+        font-size: 24px
+        height: 34px
+        padding: 0 27px
+        span
+          font-size: 15px
+        &:before
+          display: none
+        &:after
+          left: 35%
+        &.games
+          top: 444px
+          &:after
+            left: 8%
+      &__item
+        &-offer, &-deposit, &-game, &-provider, &-fs
+          width: 95%
+
+
+  @media screen and (max-width: 360px)
+    .welcome
+      &__title
+        font-size: 29px
+      &__decor-item
+        &.helm
+          width: 65px
+          left: 128px
+        &.ball
+          width: 60px
+          right: 125px
+          top: 55px
+      &__details
+        width: 290px
+        &-arrowBox
+          &:nth-child(2)
+            left: 59%
+          &:nth-child(4)
+            right: 15%
