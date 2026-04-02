@@ -1,6 +1,6 @@
 (function () {
   function initWelcomeDecorAnim() {
-    const items = document.querySelectorAll(".fav-page .welcome__decor .welcome__decor-item");
+    const items = document.querySelectorAll(".sport-page .welcome__decor .welcome__decor-item");
     items.forEach((el) => el.classList.add("animate-appear"));
     items.forEach((el) => {
       el.addEventListener("animationend", function handler(e) {
@@ -15,7 +15,7 @@
   function run() {
     initWelcomeDecorAnim();
 
-    const bonusWrapp = document.querySelector(".fav-page .bonusWrapp");
+    const bonusWrapp = document.querySelector(".sport-page .bonusWrapp");
     if (!bonusWrapp) return;
 
     function initCustomScrollbar() {
